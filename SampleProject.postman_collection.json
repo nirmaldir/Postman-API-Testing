@@ -119,8 +119,8 @@
 						"method": "PUT",
 						"header": [
 							{
-								"key": "",
-								"value": "",
+								"key": "customerid",
+								"value": "1",
 								"type": "text"
 							}
 						],
