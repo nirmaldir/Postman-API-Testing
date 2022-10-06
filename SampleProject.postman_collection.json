@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "6cc6fa80-46bd-4a49-b97c-461d582bc948",
+		"name": "SampleProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23085728"
+	},
+	"item": [
+		{
+			"name": "CRUD-API TESTING",
+			"item": [
+				{
+					"name": "CREATE-API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customername\":\"nirm\",\r\n\t\"customeremail\":\"nirm@gmail.com\",\r\n\t\"customernumber\":\"9876547898\",\r\n\t\"Location\":\"chennai\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8008/AddDetails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"AddDetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST ALL-API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/listAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"listAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE-API",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/deleteAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"deleteAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST BY ID -API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/getCustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"getCustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE BY ID -API",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8008/deletecustomer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"deletecustomer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE - API",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customername\":\"nirm\",\r\n\t\"customeremail\":\"nirm@gmail.com\",\r\n\t\"customernumber\":\"9876547898\",\r\n\t\"Location\":\"chennai\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8008/update?customerid=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8008",
+							"path": [
+								"update"
+							],
+							"query": [
+								{
+									"key": "customerid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
